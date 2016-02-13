@@ -10,6 +10,7 @@ RUN pacman -Syq --needed --noconfirm --noprogressbar \
            flex \
            gcc \
            gcc-libs \
+           git \
            imagemagick \
            libtool \
            m4 \
