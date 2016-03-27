@@ -17,8 +17,8 @@ RUN pacman -Syq --needed --noconfirm --noprogressbar \
            make \
            patch \
            pkg-config \
-           ruby2.1 && \
+           ruby2.1 \
+           ruby2.1-bundler && \
     yes | pacman -Sqcc && \
     rm -rf /usr/share/man/*
 ENV PATH=/opt/ruby2.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-RUN gem update && gem install bundler
